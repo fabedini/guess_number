@@ -5,7 +5,7 @@ answer='yes'
 
 if user_answer== answer:
   user_name=input('What is your name:\n')
-  print('Okay.',user_name,'lets do it.')
+  print(f'Okay.{user_name}lets do it.')#do not forget the 'f' 
 else:
   print('Whatever you want.Bye!')
   exit()
