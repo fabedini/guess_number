@@ -1,21 +1,23 @@
 #Random number
 import random
 random_number=random.randint(0,101)
-guessestaken=True
+Game_state=True
 
-while guessestaken:
-  guess_number=input('Please enter your guess:')
-  guess_number=int(guess_number)
-  guessestaken +=1
+while Game_state:
+  guess_number=int(input('Please enter your guess:'))
+  
   if guess_number < random_number:
     print('your guess is low,choose another one.')
+    continue
   
   if guess_number > random_number:
     print('your guess number is high, choose another one.')
+    continue
   
   if guess_number==random_number:
     print('your guess is unbelivabel')
     break
+
 
 
 
